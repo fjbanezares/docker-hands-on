@@ -51,6 +51,8 @@ You can also specify a different registry by using the `registry_hostname/reposi
 docker push registry.example.com/myimage:latest
 ```
 
+[inspiration]()
+
 
 
 
