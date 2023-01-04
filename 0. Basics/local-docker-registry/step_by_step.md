@@ -13,4 +13,25 @@ The `--name` flag **assigns a name** to the container. In this case, the name is
 
 The `registry:2` argument specifies the image to use for the container. The `registry` part specifies the repository, and the `2` part specifies the tag. In this case, the image is the `registry:2` image, which is a pre-built image containing the Docker Registry software.
 
+## Check the container is running
 
+```shell
+docker ps
+```
+
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
+c39a44a7a72c        ubuntu:latest       "/bin/bash"              2 days ago          Up 2 days                               my_container
+f0d7bac1e2b8        nginx:latest        "nginx -g 'daemon of…"   3 days ago          Up 3 days           80/tcp              my_nginx
+
+
+## Check the version of the registry running in the container
+
+```shell
+docker exec [Container ID] registry -v
+```
+
+## try log in
+
+```shell
+docker login http://10.10.10.10:5000
+```
