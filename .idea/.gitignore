@@ -1,0 +1,11 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# .gitignore
+
+# macOS system files
+.DS_Store
+
+# IDE-specific files
+.idea/
